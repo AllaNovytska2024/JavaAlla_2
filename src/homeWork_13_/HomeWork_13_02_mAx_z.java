@@ -44,7 +44,7 @@ public class HomeWork_13_02_mAx_z {
     }
 
         System.out.println(" max значение в массиве: " + max);
-int c max
+
 
 
 }

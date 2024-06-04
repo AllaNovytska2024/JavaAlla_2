@@ -1,16 +1,6 @@
-package homeWork_14_;
+package appartment;
 /*
-@ data 03.06.2024
-@ author Alla Novytska
-Task 1
-Посмотрите вокруг себя.
-Напишите три класса, описывающие какие-то сущности вокруг Вас.
-Не забудьте использовать абстракцию.
-Например, опишите студента, преподавателя и, допустим, врача.
-Вы можете выбрать свои сущности для описания.
-    */
-
-
+import homeWork_14_.Apartment;
 
 public class Apartment {
     private int area;
@@ -34,7 +24,7 @@ public class Apartment {
         System.out.println("Этаж: " + floor);
         System.out.println("Наличие Балкона / Террасы: " + balkon);
         System.out.println("Адрес: " + address);
-        System.out.println("Номер автобуса: " + bus);
+        System.out.println("Количество комнат: " + bus);
 
         System.out.println("\n============================\n");
     }
@@ -44,22 +34,9 @@ public class Apartment {
     }
 
     public static void main(String[] args) {
-        Apartment apartment = new Apartment(65, 3, 1, true, 2, "Hameln, Bergstreet,1");
+        Apartment apartment = new Apartment(100, 3, 5, true, 2, "Москва, ул. Ленина 10");
         System.out.println("Город: " + apartment.address);
     }
 }
 
-/* Ответ консоли;
-Размер квартиры: 65
-Количество комнат: 3
-Этаж: 1
-Наличие Балкона / Террасы: true
-Адрес: Hameln, Bergstreet,1
-Номер автобуса: 2
-
-============================
-
-Город: Hameln, Bergstreet,1
-
-Process finished with exit code 0
  */
