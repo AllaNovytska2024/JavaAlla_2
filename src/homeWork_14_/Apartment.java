@@ -19,6 +19,7 @@ public class Apartment {
     private int bus;
     boolean balkon;
 
+
     // Конструктор
     public Apartment(int area, int numberOfRooms, int floor, boolean balkon, int bus, String address) {
         this.area = area;
