@@ -1,3 +1,4 @@
+
 package homeWork_14_;
 /*
 @ data 03.06.2024
@@ -12,7 +13,7 @@ Task 1
 
 
 
-public class Apartment {
+public class aApartment {
     private int area;
     private int numberOfRooms;
     private int floor;
@@ -44,13 +45,13 @@ public class Apartment {
     }
 
     public static void main(String[] args) {
-        Apartment apartment = new Apartment(65, 3, 1, true, 2, "Hameln, Bergstreet,1");
+        Apartment apartment = new Apartment(100, 3, 1, true, 2, "Hameln, Bergstreet,1");
         System.out.println("Город: " + apartment.address);
     }
 }
 
 /* Ответ консоли;
-Размер квартиры: 65
+Размер квартиры: 100
 Количество комнат: 3
 Этаж: 1
 Наличие Балкона / Террасы: true
