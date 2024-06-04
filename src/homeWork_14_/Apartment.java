@@ -11,9 +11,7 @@ Task 1
 Вы можете выбрать свои сущности для описания.
     */
 
-
-
-public class aApartment {
+public class Apartment {
     private int area;
     private int numberOfRooms;
     private int floor;
@@ -50,7 +48,7 @@ public class aApartment {
     }
 }
 
-/* Ответ консоли;
+/* Ответ консоли=
 Размер квартиры: 100
 Количество комнат: 3
 Этаж: 1
