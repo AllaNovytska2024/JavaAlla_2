@@ -1,5 +1,5 @@
 
-package homeWork_14_;
+package main_Utilits_;
 /*
 @ data 03.06.2024
 @ author Alla Novytska
@@ -11,7 +11,7 @@ Task 1
 Вы можете выбрать свои сущности для описания.
     */
 
-public class Apartment {
+public class Apartment_1 {
     private int area;
     private int numberOfRooms;
     private int floor;
@@ -21,7 +21,7 @@ public class Apartment {
 
 
     // Конструктор
-    public Apartment(int area, int numberOfRooms, int floor, boolean balkon, int bus, String address) {
+    public Apartment_1(int area, int numberOfRooms, int floor, boolean balkon, int bus, String address) {
         this.area = area;
         this.numberOfRooms = numberOfRooms;
         this.floor = floor;
@@ -44,7 +44,7 @@ public class Apartment {
     }
 
     public static void main(String[] args) {
-        Apartment apartment = new Apartment(100, 3, 2, false, 2, "Hameln, Bergstreet,1");
+        Apartment_1 apartment = new Apartment_1(100, 3, 1, true, 2, "Hameln, Bergstreet,1");
         System.out.println("Город: " + apartment.address);
     }
 }

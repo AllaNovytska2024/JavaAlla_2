@@ -1,4 +1,8 @@
-package main_Utilits_;
+package lesson_15;
+/*
+@date 04.06.2024
+@author Sergey Bugaienko
+*/
 
 public class MagicArray {
     private int[] array;

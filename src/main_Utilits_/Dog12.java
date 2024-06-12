@@ -1,4 +1,4 @@
-package homeWork_16_Dog_Jump_Calculator;
+package main_Utilits_;
 /*
 @ date 06.05.2024
 @ author Alla Novytska
@@ -23,14 +23,14 @@ Task 2
 
 Добавить в класс поле, в котором будет храниться количество прыжков,
 сделанных всеми объектами класса.
- */
- public class HomeWork_16_02_Dog_Jump {
+
+ public class Dog12 {
     private String name;
     private double jumpHeight;
     private static final double MAX_JUMP_HEIGHT_MULTIPLIER = 2.0;
     private static int totalJumps = 0;
 
-    public HomeWork_16_02_Dog_Jump(String name, double initialJumpHeight) {
+    public Dog12(String name, double initialJumpHeight) {
         this.name = name;
         this.jumpHeight = initialJumpHeight;
     }
@@ -60,22 +60,16 @@ Task 2
     }
 
     public static void main(String[] args) {
-        HomeWork_16_02_Dog_Jump dog1 = new HomeWork_16_02_Dog_Jump("Барсик", 20.0);
-        HomeWork_16_02_Dog_Jump dog2 = new HomeWork_16_02_Dog_Jump("Рекс", 50.0);
+        Dog12 dog1 = new Dog12("Барсик", 40.0);
+        Dog12 dog2 = new Dog12("Рекс", 50.0);
 
         dog1.train();
-        dog1.takeBarrier(30.0); // Барьер высотой 30 см
+        dog1.takeBarrier(50.0); // Барьер высотой 50 см
 
         dog2.train();
         dog2.takeBarrier(65.0); // Барьер высотой 65 см
 
-        System.out.println("Всего сделано прыжков: " + HomeWork_16_02_Dog_Jump.getTotalJumps());
+        System.out.println("Всего сделано прыжков: " + Dog12.getTotalJumps());
     }
 }
-/*
-Ответ консоли:
-Барсик прыгает через барьер высотой 30.0 см.
-Рекс не может преодолеть барьер.
-Всего сделано прыжков: 2
-
  */

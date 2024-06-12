@@ -1,0 +1,24 @@
+/*
+            boolean[] seats; // Массив для хранения состояния мест (занято/свободно)
+
+            public  Autobus(int numSeats) {
+                seats = new boolean[numSeats]; // Инициализация массива мест
+            }
+
+            public boolean dropOfPassenger(int seatNumber) {
+                if (seatNumber >= 0 && seatNumber < seats.length) {
+                    if (!seats[seatNumber]) { // Если место не занято
+                        seats[seatNumber] = true; // Помечаем место как занятое
+                        return true; // Пассажир успешно высажен
+                    } else {
+                        return false; // Место уже занято
+                    }
+                } else {
+                    return false; // Некорректный номер места
+                }
+            }
+
+
+
+        //////////////////////////////////
+        /*
