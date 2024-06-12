@@ -1,4 +1,4 @@
-package HomeWork_20_Vehicle;
+package homeWork_20_Vehicle;
 /*
 @ date 12.06.2024
 @ author Alla Novytska
