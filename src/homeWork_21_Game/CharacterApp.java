@@ -35,6 +35,10 @@ public class CharacterApp {
             for (GameCharacter character : characters){
                 character.stopAttack();
             }
+
+            new Warrior().attack();
+            new Elephant().stopAttack();
+            new Human().attack();
         }
     }
 
