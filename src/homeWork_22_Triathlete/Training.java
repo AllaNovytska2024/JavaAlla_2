@@ -1,6 +1,6 @@
 package homeWork_22_Triathlete;
 
-// Интерфейс Runner
+// Интерфейс Training
 interface Training {
     void training();
     void stopTraining();
