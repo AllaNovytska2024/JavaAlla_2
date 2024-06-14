@@ -1,7 +1,7 @@
 package homeWork_22_Triathlete;
 
 // Класс Triathlete, реализующий оба интерфейса
-class Triathlete implements Swimmer, Runner {
+class Triathlete implements Swimmer, Runner, Training {
     @Override
     public void swim() {
         System.out.println("Triathlete плывет.");
@@ -32,5 +32,14 @@ class Triathlete implements Swimmer, Runner {
     @Override
     public void startRun() {
         System.out.println("Triathlete начал бежать.");
+    }
+    public void startTraining(){
+        System.out.println("Triathlete начал тренировку");
+    }
+    public void training(){
+        System.out.println("Triathlete тренируется");
+    }
+    public void stopTraining(){
+        System.out.println("Triathlete остановил тренировку");
     }
 }

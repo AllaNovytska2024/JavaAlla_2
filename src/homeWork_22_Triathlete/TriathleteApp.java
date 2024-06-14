@@ -10,6 +10,10 @@ public class TriathleteApp {
             triathlete.rebbitSwim();
             triathlete.stopSwim();
 
+            triathlete.startTraining();
+            triathlete.training();
+            triathlete.stopTraining();
+
             triathlete.startRun();
             triathlete.run();
             triathlete.stopRun();
