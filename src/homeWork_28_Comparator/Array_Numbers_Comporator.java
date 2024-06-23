@@ -1,4 +1,4 @@
-package array_All;
+package homeWork_28_Comparator;
 
 import java.util.Arrays;
 import java.util.Comparator;
@@ -12,7 +12,7 @@ Integer[] integers = { 1, 6, 5, 4, 7, 8, 9, 2, 7, 3 };
 [2, 4, 6, 8, 1, 3, 5, 7, 7, 9] // Output
  */
 
-public class Arroy_Numbers_Comporator implements Comparator<Integer> {
+public class Array_Numbers_Comporator implements Comparator<Integer> {
     @Override
     public int compare(Integer a, Integer b) {
         // Сначала сравниваем четность чисел
@@ -30,10 +30,10 @@ public class Arroy_Numbers_Comporator implements Comparator<Integer> {
 
     public static void main(String[] args) {
         Integer[] a = { 1, 6, 5, 4, 7, 8, 9, 2, 7, 3 };
-        Integer[] b = { 2, 4, 6, 8, 10 }; // Пример непустого массива b
+      //  Integer[] b = { 2, 4, 6, 8, 10 }; // Пример непустого массива b
 
         // Используйте вашу реализацию compare для сортировки массива a
-        Arrays.sort(a, new Arroy_Numbers_Comporator());
+        Arrays.sort(a, new Array_Numbers_Comporator());
 
         // Вывод отсортированного массива a
         System.out.println(Arrays.toString(a)); //->-> [2, 4, 6, 8, 1, 3, 5, 7, 7, 9]
