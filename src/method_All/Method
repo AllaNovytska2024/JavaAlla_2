@@ -1,0 +1,15 @@
+Главное, что нужно сейчас запомнить — любые статические методы вызываются через точку после имени класса, а сами вызовы происходят внутри других методов:
+
+// Просто пример вызовов методов друг из друга
+class MySuperClassName {
+    public static void oneMethod() {
+        MySuperClassName.twoMethod();
+    }
+
+    public static void twoMethod() {
+        MySuperClassName.threeMethod();
+    }
+
+    public static void threeMethod() {
+    }
+}

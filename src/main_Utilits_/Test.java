@@ -6,7 +6,6 @@ public class Test {
     static int statX;
 
 
-
     public static void staticInfo() {
         System.out.println("info");
         // x - нет доступа
@@ -16,7 +15,7 @@ public class Test {
     }
 
     public static int staticIntAdd(int x) {
-        return  ++x;
+        return ++x;
     }
 
     public void nonStaticInfo() {
@@ -28,5 +27,9 @@ public class Test {
 
     public void nonStatic2() {
         System.out.println("Hello");
+
     }
-}
+
+
+    }
+

@@ -4,9 +4,7 @@ package lesson_16;
 @author Sergey Bugaienko
 */
 
-import main_Utilits_.MathUtils;
-
-import java.util.Arrays;
+import math_Utils_All.MathUtils;
 
 public class AutoApp {
     public static void main(String[] args) {

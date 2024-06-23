@@ -1,8 +1,6 @@
 package appartment;
-/*
-import homeWork_14_.Apartment;
 
-public class Apartment {
+class Apartments {
     private int area;
     private int numberOfRooms;
     private int floor;
@@ -11,7 +9,7 @@ public class Apartment {
     boolean balkon;
 
     // Конструктор
-    public Apartment(int area, int numberOfRooms, int floor, boolean balkon, int bus, String address) {
+    public Apartments(int area, int numberOfRooms, int floor, boolean balkon, int bus, String address) {
         this.area = area;
         this.numberOfRooms = numberOfRooms;
         this.floor = floor;
@@ -34,9 +32,8 @@ public class Apartment {
     }
 
     public static void main(String[] args) {
-        Apartment apartment = new Apartment(100, 3, 5, true, 2, "Москва, ул. Ленина 10");
+        Apartments apartment = new Apartments(100, 3, 5, true, 2, "Берлин, Гатестрит, 39");
         System.out.println("Город: " + apartment.address);
     }
 }
 
- */

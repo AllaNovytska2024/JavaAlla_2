@@ -1,0 +1,34 @@
+package homeWork_24_Season_2;
+
+public enum Season {
+    WINTER("Winter", -5),
+    SPRING("Spring", 8),
+    SUMMER("Summer", 22),
+    AUTUMN("Autumn", 15);
+
+    // Ctrl + Shift + U - перевод выделения в нижний / верхний регистр
+
+    private final String name;
+    private final double avgTemp;
+
+    Season(String name, double avgTemp) {
+        this.name = name;
+        this.avgTemp = avgTemp;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public double getAvgTemp() {
+        return avgTemp;
+    }
+
+    @Override
+    public String toString() {
+        return "{" +
+                "name='" + name + '\'' +
+                ", avgTemp=" + avgTemp +
+                '}';
+    }
+}

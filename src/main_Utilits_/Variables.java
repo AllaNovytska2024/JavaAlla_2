@@ -40,4 +40,14 @@ public class Variables {
 
 
     }
+
+    public static class Emoji_zamena {
+        public static void main(String[] args) {
+
+
+                String emoji = "-(";
+                emoji = ":" + emoji.replace("(", ")");
+                System.out.println(emoji);
+            }
+        }
 }
