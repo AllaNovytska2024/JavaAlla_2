@@ -22,7 +22,7 @@ public class test_Password_Valid {
 
         @Test
         void testValidPassword() {
-            String validPassword = "qwerty1Q$";
+            String validPassword = "qwertyOOOO1Q$"; // меняем startPassword = "qwerty1Q$" пароль и смотрим на консоль, заменился он или нет
             // 9 ;
             System.out.println("getPassword before: " + person.getPassword());
 

@@ -1,0 +1,17 @@
+package Gr47_PR1_Realisation.src.inerface.model;
+
+public enum Role {
+    READER("Читатель"),
+    ADMIN("Администратор"),
+    LIBRARIAN("Библиотекарь");
+
+    private final String description;
+
+    Role(String description) {
+        this.description = description;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+}
