@@ -1,3 +1,5 @@
+
+
 package homeWork_36_Compare;
 /*
 @ date 04.07.2024
@@ -26,13 +28,39 @@ import java.util.List;
 import java.util.Random;
 
 public class ListComparison_Delete_Id_Value_Time {
+
+
+    private static Random random = new Random();
+    public static void indexation(List<Integer> list) {
+        for (int i = 0; i < list.size(); i++) {
+            int elem = list.get(i);
+        }
+    }
+
+    public static void insertion(List<Integer> list) {
+        for (int i = 0; i < 2000; i++) {
+            list.add(random.nextInt(1001));
+        }
+    }
+    public static void deletion(List<Integer> list) {
+        for (int i = 0; i < 1000; i++) {
+            list.remove(random.nextInt(list.size()));
+        }
+    }
+    public static void deletionValue(List<Integer> list) {
+        for (int i = 0; i < 1000; i++) {
+            list.remove(Integer.valueOf(random.nextInt(1001)));
+        }
+    }
+
+
     public static void main(String[] args) {
-        int listSize = 5000;
+        int listSize = 5000; // Создаем списки на 5_000 одинаковыми случайными значениями.
         List<Integer> arrayList = new ArrayList<>();
         List<Integer> linkedList = new LinkedList<>();
-        Random random = new Random();
 
-        // Заполнение списков случайными значениями
+
+        // Заполнение списков случайными значениями от 0 до 1000
         for (int i = 0; i < listSize; i++) {
             int randomValue = random.nextInt(1001);
             arrayList.add(randomValue);
@@ -41,46 +69,58 @@ public class ListComparison_Delete_Id_Value_Time {
 
         // Метод 1: Получение всех значений элементов списка по индексу
         long startTime = System.nanoTime();
-        for (int i = 0; i < listSize; i++) {
-            int valueFromArrayList = arrayList.get(i);
-            int valueFromLinkedList = linkedList.get(i);
-        }
+        indexation(arrayList);
         long endTime = System.nanoTime();
         long duration = endTime - startTime;
-        System.out.println("Метод 1: Получение значений по индексу заняло: " + duration + " нс");
+        System.out.println("Метод 1: Получение значений по индексу из массива заняло: " + duration + " нс");
+
+        startTime = System.nanoTime();
+        //indexation(linkedList);
+        endTime = System.nanoTime();
+        duration = endTime - startTime;
+        System.out.println("Метод 1: Получение значений по индексу из связного списка заняло: " + duration + " нс");
 
         // Метод 2: Вставка 2000 новых значений по случайному индексу
         startTime = System.nanoTime();
-        for (int i = 0; i < 2000; i++) {
-            int randomIndex = random.nextInt(listSize);
-            arrayList.add(randomIndex, random.nextInt(1001));
-            linkedList.add(randomIndex, random.nextInt(1001));
-        }
+        insertion(new ArrayList<>(arrayList));
         endTime = System.nanoTime();
         duration = endTime - startTime;
-        System.out.println("Метод 2: Вставка новых значений заняло: " + duration + " нс");
+        System.out.println("Метод 2: вставка элементов в массив заняло: " + duration + " нс");
+
+        startTime = System.nanoTime();
+        insertion(new LinkedList<>(linkedList));
+        endTime = System.nanoTime();
+        duration = endTime - startTime;
+        System.out.println("Метод 2: вставка элементов связного списка заняло: " + duration + " нс");
+
 
         // Метод 3: Удаление 1000 элементов по случайному индексу
         startTime = System.nanoTime();
-        for (int i = 0; i < 1000; i++) {
-            int randomIndex = random.nextInt(listSize);
-            arrayList.remove(randomIndex);
-            linkedList.remove(randomIndex);
-        }
+        deletion(new ArrayList<>(arrayList));
         endTime = System.nanoTime();
         duration = endTime - startTime;
-        System.out.println("Метод 3: Удаление по индексу заняло: " + duration + " нс");
+        System.out.println("Метод 3: удаление элементов в массив заняло: " + duration + " нс");
+
+        startTime = System.nanoTime();
+        deletion(new LinkedList<>(linkedList));
+        endTime = System.nanoTime();
+        duration = endTime - startTime;
+        System.out.println("Метод 3: удаление элементов связного списка заняло: " + duration + " нс");
+
 
         // Метод 4: Удаление 1000 элементов по случайному значению
         startTime = System.nanoTime();
-        for (int i = 0; i < 1000; i++) {
-            int randomValue = random.nextInt(1001);
-            arrayList.remove(Integer.valueOf(randomValue));
-            linkedList.remove(Integer.valueOf(randomValue));
-        }
+        deletionValue(new ArrayList<>(arrayList));
         endTime = System.nanoTime();
         duration = endTime - startTime;
-        System.out.println("Метод 4: Удаление по значению заняло: " + duration + " нс");
+        System.out.println("Метод 4: удаление элементов по значению массив заняло: " + duration + " нс");
+
+        startTime = System.nanoTime();
+        deletionValue(new LinkedList<>(linkedList));
+        endTime = System.nanoTime();
+        duration = endTime - startTime;
+        System.out.println("Метод 4: удаление элементов по значению связного списка заняло: " + duration + " нс");
+
     }
 }
 /*
