@@ -1,4 +1,4 @@
-package lesson_36_Collection;
+package homeWork_36_Compare;
 
 import lesson_36_Collection.PredicateImpl;
 
