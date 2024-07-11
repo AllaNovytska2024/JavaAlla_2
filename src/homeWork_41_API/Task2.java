@@ -14,7 +14,7 @@ Task 2
 Используя Stream API,
 найдите строку с максимальной длиной.
  */
-public class task2 {
+public class Task2 {
     public static void main(String[] args) {
         taskDog();
     }
@@ -37,11 +37,7 @@ public class task2 {
                     .collect(Collectors.toList());
 
             System.out.println(longDogsName);
-
-
         }
-
-
     }
 
 

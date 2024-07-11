@@ -1,7 +1,8 @@
 package homeWork_41_API;
 
 import java.util.List;
-import java.util.stream.Collectors;/*
+import java.util.stream.Collectors;
+/*
 @ data 11.07.2024
 @ author Alla Novytska
 
@@ -10,7 +11,7 @@ Task 1
 отсортируйте эти значения по значению последней цифры в числе и
 выведите результат на экране
  */
-public class task1 {
+public class Task1 {
 
     public static void main(String[] args) {
         task3();
