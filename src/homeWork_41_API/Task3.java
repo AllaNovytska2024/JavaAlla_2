@@ -1,22 +1,27 @@
-package homeWork_41_API;
+package homeWork_41_API;/*
+@date 11.07.2024
+@author Sergey Bugaienko
+*/
+/*
+Имеется список целых чисел.
+
+Необходимо отфильтровать этот список, оставив только чётные числа,
+затем каждое число умножить на 2, и собрать результат в новый список
+ */
 
 import java.util.List;
 import java.util.stream.Collectors;
 
 public class Task3 {
     public static void main(String[] args) {
-        task4();
-    }
+        List<Integer> integers = List.of(2, 1, 4, -4, 5, 0,  8, 11, 12, 15, 22);
 
-    private static void task4() {
-        List<Integer> integers = List.of(1, 6, 12, 7, 4, -11, 25, 12, 25, -15, -39, -40, 10, 0);
-
-        List<Integer> evenDoubledNumbers = integers.stream()
+        List<Integer> collect = integers.stream()
+                .filter(i -> i % 2 == 0)
                 .filter(i -> i != 0)
-                .filter(i -> i % 2 == 0) // фильтрация четных чисел
-                .map(i -> i * 2) // умножение на 2
+                .map(i -> i * 2)
                 .collect(Collectors.toList());
 
-        System.out.println(evenDoubledNumbers);
+        System.out.println(collect);
     }
 }

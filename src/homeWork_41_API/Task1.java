@@ -1,32 +1,26 @@
-package homeWork_41_API;
-
-import java.util.List;
-import java.util.stream.Collectors;
+package homeWork_41_API;/*
+@date 11.07.2024
+@author Sergey Bugaienko
+*/
 /*
-@ data 11.07.2024
-@ author Alla Novytska
-
 Task 1
 Из списка целых чисел выделите те значения, которые больше 10;
-отсортируйте эти значения по значению последней цифры в числе и
-выведите результат на экране
+отсортируйте эти значения по значению последней цифры в числе
+и выведите результат на экране
  */
+
+import java.util.Comparator;
+import java.util.List;
+
 public class Task1 {
-
     public static void main(String[] args) {
-        task3();
-    }
+        List<Integer> integers = List.of(9, 17, 11, 22, 5, 34, 55, 101, 204);
 
-
-    private static void task3() {
-        // Получить список всех чисел больше 10 из списка.
-        List<Integer> integers = List.of(1, 12, 7, -11, 25, 12, 25, -15, -39, 10, 0);
-
-        List<Integer> integerList = integers.stream()
+        integers.stream()
                 .filter(i -> i > 10)
-                .sorted()
-                .collect(Collectors.toList());
-
-        System.out.println(integerList);
+                .sorted(Comparator.comparing(i -> i % 10))
+//                .sorted((i1, i2) -> (i1 % 10) - (i2 % 10))
+                .forEach(i -> System.out.print(i + ", "));
+        System.out.println();
     }
 }
