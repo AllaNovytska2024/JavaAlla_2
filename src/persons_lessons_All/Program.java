@@ -1,7 +1,7 @@
 package persons_lessons_All;
+
 /*
 
-import test.ProgramPersonProtected.Person;
 
 public class Program {
 
@@ -40,22 +40,22 @@ public class Program {
         }
     }
 
- public class Person {
+ public class Person_ {
         String name;
         int age;
 
         //Начало блока инициализатораю
-        Person (){
+        Person_(){
             this ("Undefined", 18);
         }
       // Конец блока инициализатора.
 
 
-        Person (String name){
+        Person(String name){
             this ( name, 18);
         }
 
-        Person (String name, int age){
+        Person(String name, int age){
             this.name = name;
             this.age = age;
         }
@@ -67,4 +67,6 @@ public class Program {
     }
 }
 
-*/
+
+
+ */
